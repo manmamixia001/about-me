@@ -145,75 +145,76 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const aboutMeButtons = document.querySelectorAll(".AboutMe-button");
-
-  if (aboutMeButtons.length > 0) {
-    aboutMeButtons.forEach(button => {
-      button.addEventListener("click", function (event) {
-        event.preventDefault(); // デフォルトのリンク動作を無効化
-
-        // フェードアウト処理
-        const elementsToFadeOut = document.querySelectorAll("body > *:not(header)");
-        elementsToFadeOut.forEach(element => {
-          element.style.transition = "opacity 1s";
-          element.style.opacity = "0";
+    const aboutMeButtons = document.querySelectorAll(".AboutMe-button");
+  
+    if (aboutMeButtons.length > 0) {
+      aboutMeButtons.forEach(button => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault(); // デフォルトのリンク動作を無効化
+  
+          // フェードアウト処理
+          const elementsToFadeOut = document.querySelectorAll("body > *:not(header)");
+          elementsToFadeOut.forEach(element => {
+            element.style.transition = "opacity 1s";
+            element.style.opacity = "0";
+          });
+  
+          // 2秒後にリンク移動
+          setTimeout(() => {
+            window.location.href = "https://name-about-me.netlify.app/";
+          }, 1000);
         });
-
-        // 2秒後にリンク移動
-        setTimeout(() => {
-          window.location.href = "/about-me";
-        }, 1000);
       });
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const aboutMeButtons = document.querySelectorAll(".Works-button");
-
-  if (aboutMeButtons.length > 0) {
-    aboutMeButtons.forEach(button => {
-      button.addEventListener("click", function (event) {
-        event.preventDefault(); // デフォルトのリンク動作を無効化
-
-        // フェードアウト処理
-        const elementsToFadeOut = document.querySelectorAll("body > *:not(header)");
-        elementsToFadeOut.forEach(element => {
-          element.style.transition = "opacity 1s";
-          element.style.opacity = "0";
+    }
+  });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const aboutMeButtons = document.querySelectorAll(".Works-button");
+  
+    if (aboutMeButtons.length > 0) {
+      aboutMeButtons.forEach(button => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault(); // デフォルトのリンク動作を無効化
+  
+          // フェードアウト処理
+          const elementsToFadeOut = document.querySelectorAll("body > *:not(header)");
+          elementsToFadeOut.forEach(element => {
+            element.style.transition = "opacity 1s";
+            element.style.opacity = "0";
+          });
+  
+          // 2秒後にリンク移動
+          setTimeout(() => {
+            window.location.href = "https://name-works.netlify.app/";
+          }, 1000);
         });
-
-        // 2秒後にリンク移動
-        setTimeout(() => {
-          window.location.href = "/works";
-        }, 1000);
       });
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const aboutMeButtons = document.querySelectorAll(".index-button");
-
-  if (aboutMeButtons.length > 0) {
-    aboutMeButtons.forEach(button => {
-      button.addEventListener("click", function (event) {
-        event.preventDefault(); // デフォルトのリンク動作を無効化
-
-        // フェードアウト処理
-        const elementsToFadeOut = document.querySelectorAll("body > *:not(header)");
-        elementsToFadeOut.forEach(element => {
-          element.style.transition = "opacity 1s";
-          element.style.opacity = "0";
+    }
+  });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const aboutMeButtons = document.querySelectorAll(".index-button");
+  
+    if (aboutMeButtons.length > 0) {
+      aboutMeButtons.forEach(button => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault(); // デフォルトのリンク動作を無効化
+  
+          // フェードアウト処理
+          const elementsToFadeOut = document.querySelectorAll("body > *:not(header)");
+          elementsToFadeOut.forEach(element => {
+            element.style.transition = "opacity 1s";
+            element.style.opacity = "0";
+          });
+  
+          // 2秒後にリンク移動
+          setTimeout(() => {
+            window.location.href = "https://lndex-2.netlify.app/";
+          }, 1000);
         });
-
-        // 2秒後にリンク移動
-        setTimeout(() => {
-          window.location.href = "/index";
-        }, 1000);
       });
-    });
-  }
-});
+    }
+  });
+  
 
 
