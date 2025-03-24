@@ -41,7 +41,11 @@ body > *:not(header) {
   top: 0px;
   z-index: 10;
 }
-  
+html, body {
+  transform: none !important; /* transform を解除 */
+  perspective: none !important;
+  filter: none !important;
+}  
   /* 初期状態（アニメーション前） */
 .header {
   transform: translateY(0px); /* 下に-80px移動 */
